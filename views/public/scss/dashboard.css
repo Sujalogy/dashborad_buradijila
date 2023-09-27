@@ -1,0 +1,210 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 1em;
+}
+.header .logo {
+  width: 10em;
+}
+.header .logo2 {
+  position: relative;
+  right: 50px;
+  width: 13em;
+}
+
+.mains {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.mains .aside {
+  border-right: 1px solid #000;
+  display: flex;
+  justify-content: center;
+}
+.mains .aside .filters {
+  text-align: center;
+  width: 150px;
+  height: 475px;
+}
+.mains .aside .filters h1 {
+  padding: 1em;
+  border-bottom: 1px solid red;
+}
+.mains .aside .filters .links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+.mains .body {
+  min-height: 485px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mains .body .check {
+  width: 560px;
+  height: 455px;
+}
+.mains .body .right {
+  border: 1px solid #000;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.mains .body .right .totals {
+  display: grid;
+  gap: 10px;
+  padding: 1em 2em;
+  border-radius: 20px;
+  text-align: justify;
+}
+.mains .body .right .totals .position {
+  text-align: center;
+}
+.mains .body .right .totals .left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 455px;
+  position: relative;
+  left: 16px;
+  gap: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+.mains .body .right .totals .left div {
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: white;
+}
+.mains .body .right .totals .right {
+  position: relative;
+  left: 10px;
+  width: 450px;
+  height: 200px;
+  text-align: center;
+  background-color: white;
+}
+.mains .body .right .four .table_mobile {
+  display: none;
+}
+.mains .body .right .four table {
+  margin-top: 1em;
+  border-collapse: collapse;
+  text-align: center;
+}
+.mains .body .right .four table th,
+.mains .body .right .four table td {
+  padding: 0.3em;
+}
+.mains .body .right .four table thead {
+  background-color: #ffffff;
+}
+.mains .body .right .four table td:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  #myChart2 {
+    position: relative;
+    left: 25px;
+  }
+  #myChart {
+    position: relative;
+    left: 25px;
+  }
+  .header {
+    display: flex;
+    width: 135%;
+    justify-content: center;
+  }
+  .header .logo {
+    display: none;
+  }
+  .header .logo2 {
+    width: 350px;
+    position: inherit;
+  }
+  .header button {
+    display: none;
+  }
+  .mains {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mains .aside {
+    border: 1px solid red;
+    border: none;
+    width: 506.3px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+  }
+  .mains .aside .filters {
+    width: 150px;
+    height: 475px;
+  }
+  .mains .aside .filters h1 {
+    padding: 0.4em;
+  }
+  .mains .aside .filters .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .mains .body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 238px;
+  }
+  .mains .body .check {
+    width: 478px;
+    height: 455px;
+  }
+  .mains .body .right {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .mains .body .right .four .table {
+    display: none;
+  }
+  .mains .body .right .four .table_mobile {
+    display: block;
+  }
+  .mains .body .right .four table th,
+  .mains .body .right .four table td {
+    padding: 4px;
+    width: 90%;
+  }
+  .mains .body .right .four table th {
+    font-size: 17px;
+  }
+  .mains .body .right .four table td {
+    font-size: 16px;
+  }
+  .mains .body .right .totals {
+    display: flex;
+    flex-direction: column;
+  }
+  .mains .body .right .totals .left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -20px;
+  }
+  .mains .body .right .totals .right {
+    position: relative;
+    left: -30px;
+  }
+  .mains .body .right .totals .position {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=dashboard.css.map */

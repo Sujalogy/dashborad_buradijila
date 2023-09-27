@@ -1,0 +1,46 @@
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    width: 265%;
+    justify-content: center;
+    .logo {
+      display: none;
+    }
+    .logo2 {
+      position: inherit;
+    }
+    button {
+      display: none;
+    }
+  }
+
+  .mains {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .aside {
+      width: 989.3px;
+      height: 275px;
+      display: flex;
+      justify-content: center;
+      .filters {
+        width: 150px;
+        height: 475px;
+        h1 {
+          padding: 0.4em;
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .tabled {
+    position: relative;
+    right: 190px;
+    border: 1px solid #000;
+  }
+}

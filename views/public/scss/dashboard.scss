@@ -1,0 +1,222 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0em 1em;
+  .logo {
+    width: 10em;
+  }
+  .logo2 {
+    position: relative;
+    right: 50px;
+    width: 13em;
+  }
+  // button{
+  //   // display: none;
+  // }
+}
+.mains {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-top: 20px;
+  justify-content: space-between;
+  .aside {
+    border-right: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    .filters {
+      // border: 1px solid #000;
+      text-align: center;
+      width: 150px;
+      height: 475px;
+      h1 {
+        // border: 1px solid #000;
+        padding: 1em;
+        border-bottom: 1px solid red;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+      }
+    }
+  }
+  .body {
+    min-height: 485px;
+    display: flex;
+    justify-content: space-evenly;
+    .check {
+      width: 560px;
+      height: 455px;
+    }
+    .right {
+      border: 1px solid #000;
+      text-align: center;
+      border-radius: 20px;
+      padding: 10px;
+      margin-right: 10px;
+      .totals {
+        display: grid;
+        gap: 10px;
+        padding: 1em 2em;
+        border-radius: 20px;
+        text-align: justify;
+        .position {
+          text-align: center;
+        }
+        .left {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          width: 455px;
+          position: relative;
+          left: 16px;
+          gap: 10px;
+          text-align: center;
+          border-radius: 20px;
+          div {
+            border: 1px solid #000;
+            border-radius: 20px;
+            background-color: white;
+          }
+        }
+        .right {
+          position: relative;
+          left: 10px;
+          width: 450px;
+          height: 200px;
+          text-align: center;
+          background-color: white;
+        }
+      }
+      .four {
+        .table_mobile {
+          display: none;
+        }
+        table {
+          margin-top: 1em;
+          border-collapse: collapse;
+          text-align: center;
+          th,
+          td {
+            padding: 0.3em;
+          }
+          thead {
+            background-color: #ffffff;
+          }
+          td:hover {
+            background-color: #ffffff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #myChart2 {
+    position: relative;
+    left: 25px;
+  }
+  #myChart {
+    position: relative;
+    left: 25px;
+  }
+  .header {
+    display: flex;
+    width: 135%;
+    justify-content: center;
+    .logo {
+      display: none;
+    }
+    .logo2 {
+      width: 350px;
+      position: inherit;
+    }
+    button {
+      display: none;
+    }
+  }
+
+  .mains {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .aside {
+      border: 1px solid red;
+      border: none;
+      width: 506.3px;
+      height: 275px;
+      display: flex;
+      justify-content: center;
+      .filters {
+        width: 150px;
+        height: 475px;
+        h1 {
+          padding: 0.4em;
+          // border-bottom: 1px solid red;
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: center;
+        }
+      }
+    }
+    .body {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 238px;
+      .check {
+        width: 478px;
+        height: 455px;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        .four {
+          .table {
+            display: none;
+          }
+          .table_mobile {
+            display: block;
+          }
+          table {
+            th,
+            td {
+              padding: 4px;
+              width: 90%;
+            }
+            th {
+              font-size: 17px;
+            }
+            td {
+              font-size: 16px;
+            }
+          }
+        }
+        .totals {
+          display: flex;
+          flex-direction: column;
+          .left {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: -20px;
+          }
+          .right {
+            position: relative;
+            left: -30px;
+          }
+          .position {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
