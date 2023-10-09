@@ -10,7 +10,8 @@ function Dashboard() {
   const chartRef2 = useRef(null);
 
   useEffect(() => {
-    const API = "https://burarijila-fmni.onrender.com";
+    // const API = "https://burarijila-fmni.onrender.com";
+    const API = "https://lime-determined-hermit-crab.cyclic.cloud";
     fetch(API)
       .then((res) => res.json())
       .then((result) => gettingData(result.data))

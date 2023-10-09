@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import "../../../public/scss/nagarseh.css";
 
 function NagarTable() {
-  const apiUrl = "https://burarijila-fmni.onrender.com";
-  // const apiUrl = "http://localHost:3000";
+  // const apiUrl = "https://burarijila-fmni.onrender.com";
+  const apiUrl = "http://localHost:3000";
 
   const [selectedNagar, setSelectedNagar] = useState(""); // State to hold the selected nagar
   const [tableData, setTableData] = useState([]); // State to hold the table data

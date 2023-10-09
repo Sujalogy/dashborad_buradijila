@@ -27,7 +27,7 @@ function Master() {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/login", {
+      const response = await fetch("https://lime-determined-hermit-crab.cyclic.cloud/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,7 @@ function Master() {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         };
-        const responseD = await fetch("http://localhost:3000/login", {
+        const responseD = await fetch("https://lime-determined-hermit-crab.cyclic.cloud/login", {
           method: "GET",
           headers: authorizedHeaders,
         });
