@@ -3,7 +3,7 @@ import "../../../public/scss/table.css";
 
 function Tableall() {
   // const apiUrl = "https://burarijila-fmni.onrender.com";
-  const apiUrl = "http://localHost:3000";
+  const apiUrl = "https://lime-determined-hermit-crab.cyclic.cloud";
   fetchData(apiUrl);
   let totalShulk = 0;
   // let totalSankhya = 0;
